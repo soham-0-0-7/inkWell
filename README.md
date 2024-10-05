@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# How to Build a Book Library (CRUD App) with Nextjs 14, AWS Lambda, AWS Api Gateway and DynamoDb
+
+A simple Book Library app built using **Next.js 14**, **Tailwind CSS**, **AWS DynamoDB**, **AWS Lambda** and **AWS API Gateway**. This app showcases CRUD (Create, Read, Update, Delete) operations for managing books, with server actions in Next.js and DynamoDB as the database.
+
+![thumbnail](./thumbnail.png)
+
+Youtube: [Watch](https://www.youtube.com/watch?v=ygBVY_Veblk)
+
+Article: [blog](https://thetechmaze.com/blog/how-to-build-a-book-library-with-nextjs-14-aws-lambda-aws-api-gateway-and-dynamodb)
+
+## Prerequisites
+
+- **Node.js** installed locally.
+- An **AWS account** to use DynamoDB, Lambda and API Gateway.
+- AWS API Gateway URL added to `.env.local`.
 
 ## Getting Started
 
-First, run the development server:
+1.  **Clone the repository:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    ```bash
+    git clone https://github.com/thetechmaze/book-library-next-dynamo.git
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2.  **Install Dependencies**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ```bash
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3.  **Set up Environment variables**
 
-## Learn More
+    Create a `.env.local` file in the root directory and add your AQWS credentials:
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    AWS_API_URL=your-url
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  **Run the development server**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+    Open http://localhost:3000 in your browser to see the app in action.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To Deploy this app, you can use platforms like Vercel or Netlify. Ensure you have your environment variables set correctly on the chosen platform.
+
+## License
+
+This project is open source and available under the [MIT Licence](./LICENCE).
