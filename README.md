@@ -28,15 +28,19 @@ Article: [blog](https://thetechmaze.com/blog/how-to-build-a-book-library-with-ne
     npm install
     ```
 
-3.  **Set up Environment variables**
+3.  ** AWS SETUP **
 
-    Create a `.env.local` file in the root directory and add your AQWS credentials:
+    Make sure that you have the aws dynamodb, lambda and api gatway ready by following this [article](https://thetechmaze.com/blog/how-to-build-a-book-library-with-nextjs-14-aws-lambda-aws-api-gateway-and-dynamodb) or [video](https://www.youtube.com/watch?v=ygBVY_Veblk)
+
+4.  **Set up Environment variables**
+
+    Create a `.env.local` file in the root directory and add your AWS credentials:
 
     ```bash
     AWS_API_URL=your-url
     ```
 
-4.  **Run the development server**
+5.  **Run the development server**
 
     ```bash
     npm run dev
